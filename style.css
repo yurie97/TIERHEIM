@@ -3,6 +3,7 @@ body {
   color: #5C5043;
   background-color: #FAF7F4;
   font-size: 16px;
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
 }
 
 a {
@@ -225,6 +226,22 @@ h4::before {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
+}
+.modal .item-flex .image .dog1 {
+  -o-object-position: 65% top;
+     object-position: 65% top;
+}
+.modal .item-flex .image .dog2 {
+  -o-object-position: center 20%;
+     object-position: center 20%;
+}
+.modal .item-flex .image .cat1 {
+  -o-object-position: 10% 45%;
+     object-position: 10% 45%;
+}
+.modal .item-flex .image .cat2 {
+  -o-object-position: center 15%;
+     object-position: center 15%;
 }
 .modal .item-flex .text {
   width: 57%;
@@ -470,6 +487,12 @@ header nav ul li a:hover::before {
 #foster-parent .foster2 .flex .dog .animal-flex .animal-item .modal-open .sub .image-wrap .plus-btn::after {
   width: 2px;
   height: 12px;
+}
+#foster-parent .foster2 .flex .dog .animal-flex .animal-item .modal-open .sub .image-wrap .plus-btn:hover {
+  background-color: #5C5043;
+}
+#foster-parent .foster2 .flex .dog .animal-flex .animal-item .modal-open .sub .image-wrap .plus-btn:hover::before, #foster-parent .foster2 .flex .dog .animal-flex .animal-item .modal-open .sub .image-wrap .plus-btn:hover::after {
+  background-color: #FAF7F4;
 }
 #foster-parent .foster2 .flex .dog .animal-flex .animal-item .modal-open .sub p {
   font-size: 14px;
@@ -937,7 +960,7 @@ footer p {
   .modal .item-flex .image img {
     width: 100%;
     height: auto;
-    max-height: 550px;
+    height: 550px;
   }
   .modal .item-flex .text {
     width: 100%;
@@ -1117,6 +1140,10 @@ footer p {
     height: calc(80vh - 80px);
     position: relative;
     margin-bottom: 200px;
+  }
+  #mainvisual .main-image {
+    -o-object-position: 80% top;
+       object-position: 80% top;
   }
   #mainvisual h2 {
     top: 100%;
