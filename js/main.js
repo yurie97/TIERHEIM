@@ -34,7 +34,7 @@ $(function () {
   });
 
   
-  $(".slide-items-slick").slick({
+  $("#slide-items1").slick({
     autoplay: true,
     autoplaySpeed: 0,
     speed: 5000,              // ← 少し遅くしておくと安定
@@ -48,6 +48,37 @@ $(function () {
     pauseOnFocus: false,
     pauseOnHover: false
   });
+
+
+  $('.slick-items2').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: false,
+    
+
+    responsive: [{
+      breakpoint: 960, // ブレイクポイントを指定
+        settings: {
+        slidesToShow: 2
+        },
+      },
+      {
+      breakpoint: 767,
+        settings: {
+        slidesToShow: 1 , 
+        centerMode: true ,
+        centerPadding: '20%',
+      },
+      },
+    ]
+    
+  });
+
+
+
+ 
 
   /*=================================================
   スクロール時の画像フェード表示
@@ -81,38 +112,6 @@ $(function () {
     $(this).toggleClass("open");
     $(this).find(".plus-minus").toggleClass("open");
   });
-
-
-  $('.swiper').each(function () {
-    new Swiper(this, {
-      slidesPerView: 3,
-      spaceBetween: 60,
-      centeredSlides: true,
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: $(this).find('.swiper-pagination')[0],
-        clickable: true
-      },
-      navigation: {
-        nextEl: $(this).find('.next')[0],
-        prevEl: $(this).find('.prev')[0]
-      },
-      breakpoints: {
-        960: { slidesPerView: 3 },
-        767: { slidesPerView: 2 },
-        0: { slidesPerView: 1 }
-      }
-    });
-  });
-
-
-
- 
-
 
 
   // クリックしたモーダルを開く
