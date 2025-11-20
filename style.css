@@ -63,6 +63,11 @@ h4::before {
 }
 .slider-wrapper .slick-slide {
   margin: 0 20px;
+  max-width: 270px !important;
+}
+.slider-wrapper .slick-slide div {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .slider-wrapper .slick-items2 {
   width: 100%;
@@ -70,7 +75,7 @@ h4::before {
 }
 .slider-wrapper .slick-items2 li {
   background-color: #fff;
-  width: 260px;
+  max-width: 270px;
   height: auto;
   overflow: hidden;
   border: 1px solid #5C5043;
@@ -805,7 +810,7 @@ header nav ul li a:hover::before {
   width: 30px;
   position: absolute;
   top: 60px;
-  left: 80px;
+  left: 15%;
 }
 #contact .flex .content .right {
   border-top: 1.5px solid #5C5043;
@@ -813,7 +818,7 @@ header nav ul li a:hover::before {
   width: 30px;
   position: absolute;
   top: 60px;
-  right: 80px;
+  right: 15%;
 }
 #contact .flex .content .row {
   font-size: 24px;
@@ -964,6 +969,13 @@ footer p {
   }
   .modal .item-flex .text dl dt {
     padding: 8px 6px;
+  }
+  .slider-wrapper {
+    max-width: 760px;
+    padding: 0 30px;
+  }
+  .slider-wrapper .slick-slide {
+    margin: 0 15px;
   }
   header {
     justify-content: space-between;
@@ -1313,6 +1325,9 @@ footer p {
   #contact .flex {
     flex-direction: column;
     margin-top: 30px;
+    padding: 30px;
+    max-width: 650px;
+    width: 100%;
   }
   #contact .flex .content {
     width: 100%;
@@ -1331,5 +1346,14 @@ footer p {
   footer .flex-list {
     margin: 50px 0 60px;
     gap: 30px 50px;
+  }
+}
+@media (max-width: 700px) {
+  .slider-wrapper {
+    max-width: 500px;
+    padding: 0 30px;
+  }
+  .slider-wrapper .slick-slide {
+    margin: 0 20px;
   }
 }/*# sourceMappingURL=style.css.map */

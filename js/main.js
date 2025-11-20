@@ -54,23 +54,27 @@ $(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     
 
     responsive: [{
       breakpoint: 960, // ブレイクポイントを指定
         settings: {
-        slidesToShow: 2
+        slidesToShow: 2 ,
+        centerMode: true ,
+        centerPadding: '10%'
+
         },
       },
       {
-      breakpoint: 767,
+      breakpoint: 701,
         settings: {
         slidesToShow: 1 , 
         centerMode: true ,
-        centerPadding: '20%',
-      },
+        centerPadding: '15%'
+
+        },
       },
     ]
     
